@@ -4,7 +4,7 @@ const COLOR_DEPTH = 1;
 
 $assignedDates = [
     '"24 Feb 2020"',
-    '"25 Feb 2020"',
+//    '"25 Feb 2020"',
     '"1 Mar 2020"',
     '"4 Mar 2020"',
 //    '"8 Mar 2020"',
