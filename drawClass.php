@@ -3,10 +3,10 @@ const FILENAME = 'fileToModify.txt';
 const COLOR_DEPTH = 5;
 
 $assignedDates = [
-    '"24 Feb 2020"',
-    '"25 Feb 2020"',
-    '"1 Mar 2020"',
-    '"4 Mar 2020"',
+//    '"24 Feb 2020"',
+//    '"25 Feb 2020"',
+//    '"1 Mar 2020"',
+//    '"4 Mar 2020"',
     '"8 Mar 2020"',
     '"12 Mar 2020"',
     '"16 Mar 2020"',
@@ -24,11 +24,11 @@ $assignedDates = [
 ];
 
 foreach ($assignedDates as $item) {
-    for( $i=0; $i<COLOR_DEPTH; ++$i) {
-        file_put_contents(FILENAME, $item);
+    for ($i = 0; $i < COLOR_DEPTH; ++$i) {
+        file_put_contents(FILENAME, "$item$i");
         shell_exec("git add .");
-        shell_exec("git commit -m $item");
-        shell_exec("git commit --amend --no-edit --date $item");
+        shell_exec("git commit -m $item$i");
+        shell_exec("git commit --amend --no-edit --date $item$i");
         shell_exec("git pull --rebase");
         shell_exec("git push origin master");
     }
