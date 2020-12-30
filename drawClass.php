@@ -1,5 +1,6 @@
 <?php
 const FILENAME = 'fileToModify.txt';
+const COLOR_DEPTH = 5;
 
 $assignedDates = [
     '"24 Feb 2020"',
@@ -23,9 +24,11 @@ $assignedDates = [
 ];
 
 foreach ($assignedDates as $item) {
-    file_put_contents(FILENAME, $item);
-    shell_exec("git add .");
-    shell_exec("git commit -m $item");
-    shell_exec("git commit --amend --no-edit --date $item");
-    shell_exec("git push origin master");
+    for( $i=0; $i<COLOR_DEPTH; ++$i) {
+        file_put_contents(FILENAME, $item);
+        shell_exec("git add .");
+        shell_exec("git commit -m $item");
+        shell_exec("git commit --amend --no-edit --date $item");
+        shell_exec("git push origin master");
+    }
 }
