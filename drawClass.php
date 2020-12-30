@@ -26,6 +26,7 @@ $assignedDates = [
 foreach ($assignedDates as $item) {
     for( $i=0; $i<COLOR_DEPTH; ++$i) {
         file_put_contents(FILENAME, $item);
+        shell_exec("git pull --rebase");
         shell_exec("git add .");
         shell_exec("git commit -m $item");
         shell_exec("git commit --amend --no-edit --date $item");
