@@ -1,6 +1,6 @@
 <?php
 const FILENAME = 'fileToModify.txt';
-const COLOR_DEPTH = 3;
+const COLOR_DEPTH = 6;
 
 $assignedDates = [
     '"10 Jul 2023"',
