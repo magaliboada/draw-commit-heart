@@ -1,26 +1,28 @@
 <?php
 const FILENAME = 'fileToModify.txt';
-const COLOR_DEPTH = 1;
+const COLOR_DEPTH = 3;
 
 $assignedDates = [
-    '"24 Feb 2020"',
-    '"25 Feb 2020"',
-    '"1 Mar 2020"',
-    '"4 Mar 2020"',
-    '"8 Mar 2020"',
-    '"12 Mar 2020"',
-    '"16 Mar 2020"',
-    '"20 Mar 2020"',
-    '"24 Mar 2020"',
-    '"28 Mar 2020"',
-    '"30 Mar 2020"',
-    '"3 Apr 2020"',
-    '"5 Apr 2020"',
-    '"9 Apr 2020"',
-    '"12 Apr 2020"',
-    '"15 Apr 2020"',
-    '"20 Apr 2020"',
-    '"21 Apr 2020"',
+    '"10 Jul 2023"',
+    '"11 Jul 2023"',
+    '"19 Jul 2023"',
+    '"27 Jul 2023"',
+    '"4 Aug 2023"',
+    '"12 Aug 2023"',
+    '"18 Aug 2023"',
+    '"24 Aug 2023"',
+    '"30 Aug 2023"',
+    '"5 Sep 2023"',
+    '"4 Sep 2023"',
+    '"27 Aug 2023"',
+    '"20 Aug 2023"',
+    '"14 Aug 2023"',
+    '"8 Aug 2023"',
+    '"31 Jul 2023"',
+    '"23 Jul 2023"',
+    '"16 Jul 2023"',
+
+
 ];
 
 foreach ($assignedDates as $item) {
